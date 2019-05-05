@@ -1,0 +1,6 @@
+<div *ngFor="let room of meetingRooms">
+  {{room.name}}
+</div>
+<div *ngFor="let meeting of meetings">
+  <app-meeting [model]="meeting"></app-meeting>
+</div>

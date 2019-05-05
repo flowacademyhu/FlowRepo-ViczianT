@@ -1,0 +1,14 @@
+1. a - nincs mit toString-elni ha nincs definiálva //b a jó válasz
+2. szo.szting(2, 4); - 2-es index-vel kezdődik, 4-es vége //c a jó - (2, 5) mert a 4. index benne van, az 5. nem
+3. c //d a jó
+4. b (azaz x = 1), de KódNáci: "retunr" --> helyes válasz: c. //jó válasz, de nem emiatt. Final miatt.
+5. a (vagy b) //c, de beírok magamnak egy pontot a void <-> return miatt.
+6. a -(vagy c) mi a túrót keres a main fv-en belül a class hívás, példányosítás? //jó válasz: b.
+7. b - 12-ben az 5 késtszer, 12-ben a 7 egyszer van meg. //OK
+8. a - elegendő deklarálni. //jó válasz: c
+9. a //OK
+10. b //OK
+11. d - nem, mert super //OK
+12. d //b
+13. b - IOException file elérésre vonatkozik (???), tehát nem találta a test.txt filet. //d a jó mert nem lett lekezelve a finally ág...
+14. c //OK

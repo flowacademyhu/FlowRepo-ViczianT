@@ -1,0 +1,23 @@
+img {
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  border: solid 2px;
+}
+
+p {
+  font-family: 'Shadows Into Light', cursive;
+}
+
+a:link {
+  color: blue;
+}
+a:visited {
+  color: gold;
+}
+a:hover {
+  color: palevioletred;
+}
+a:active {
+  color: red;
+}

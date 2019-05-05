@@ -1,0 +1,30 @@
+<form #form="ngForm">
+    <div class="form-group">
+        <label for="feladat">Feladat</label>
+        <input #task="ngModel" name="feladat" [(ngModel)]="model.name" required maxlength="10" minlength="3" type="text" id="taskname" class="form-control"/>
+        <div *ngIf="!task.minlength && !task.valid && task.touched">Legalább 3 karaktert, haveeeer!</div>
+                
+      </div>
+      <div class="form-group">
+        <label for="state">Státusz</label>
+        <input 
+          name="status"
+          #stat="ngModel"
+          [(ngModel)]="model.state"
+          id="state" 
+          class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="description">Leírás</label>
+        <textarea
+          name="description"
+          #desc="ngModel"
+          [(ngModel)]="model.description" 
+          id="description" 
+          class="form-control"> </textarea>
+      </div>
+      <button class="btn btn-primary"
+        type="submit" [disabled]="task.invalid" (click)="submitted()">Submit</button>
+  </form>
+<button routerLink="/tasks">Back To TaskList</button>
+<button (click)="onClick()">Back 2 T.List</button>

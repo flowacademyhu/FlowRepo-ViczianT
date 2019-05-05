@@ -1,0 +1,10 @@
+<p>{{model.title}}</p>
+<p>{{model.subTitle}}</p>
+
+<div *ngFor="let book of books">
+    {{ book.title }} {{ book.subTitle }}
+</div>
+
+<app-book *ngFor="let book of model">
+    {{ book.title }} {{ book.subTitle }}
+</app-book>
